@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --Light-Green: #d6f97b;
+    --Bright-Green: #b6e23a;
+    --Light-Blue: #4a90e2;
+    --Yellow: #f5e663;
+    --White: #ffffff;
+    --Black: #000000;
+    --Gray: #f0f0f0;
+    --Light-Gray: #f7f7f7;
+    --btn-bg-1: #d6f97b;
+    --btn-bg-2: #7d9c25;
+    --Button-Gradient-Start: #d6f97b;
+    --Button-Gradient-Mid: #eff6d1;
+    --Button-Gradient-End: #b6e23a;
+    --Badge-Border: #e0e0e0;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f1f1f1;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card-container {
+    width: 300px;
+    height: 420px;
+    margin: 60px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: inset 4px 4px 10px rgb(190, 206, 185), inset -4px -4px 10px #ffffff;
+    border: 2px solid rgb(206, 206, 206);
+    box-shadow: 12px 16px 53px 8px rgba(0,0,0,0.64);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.card, .card-2 {
+    width: 300px;
+    height: 400px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: top;
+    pointer-events: none;
+    padding: 20px;
+}
+
+
+.card-2 {
+    background: linear-gradient(135deg, var(--btn-bg-1), var(--btn-bg-2));
+    color: var(--White);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    display: flex;
+    justify-content: row;
+    backdrop-filter: blur(5px);
+    background: var(--Light-Gray);
+    color: var(--Black);
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.badge_dot i {
+    margin-right: 3px;
+    color: var(--Button-Gradient-End);
+}
+
+.img-card {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-content, .card-content-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 30px;
+    
+}
+
+.card-content-2 {
+    padding: 15px;
+}
+
+.card-content-2 h1, .card-content-2 h5 {
+    color: var(--White) !important;
+}
+
+.card-content h1, .card-content-2 h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--Black);
+}
+
+.card-content h5 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--Black);
+    font-family: "Corinthia", sans-serif;
+}
+
+.card-content-2 h5 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--White);
+    font-family: "Corinthia", sans-serif;
+    margin-top: -10px;
+}
+
+.card-content p {
+    font-size: 0.83rem;
+    color: var(--Black);
+    margin-top: 8px;
+}
+
+.card-content-2 p {
+    font-size: 0.9rem;
+    color: #eef5d1;
+    font-weight: 200;
+}
+
+.btn, .btn-2 {
+    width: 100%;
+    margin-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-2 {
+    margin-top: -15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* From Uiverse.io by Allyhere */ 
+.btn-action {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    
+    --btn-bg-color: #000000;
+    --radii: 20px;
+    cursor: pointer;
+    padding: 0.9em 60px;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--Button-Gradient-End) 0%,
+      var(--Button-Gradient-Mid) 55%,
+      var(--Button-Gradient-Start) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+    0px 0px 20px rgba(214, 249, 123, 0.5),
+    0px 5px 5px -1px rgba(182, 226, 58, 0.25),
+    inset 4px 4px 8px rgba(214, 249, 123, 0.5),
+    inset -4px -4px 8px rgba(182, 226, 58, 0.35);
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn-action:hover {
+    background-position: right top;
+}
+.btn-action:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-action {
+        transition: linear;
+    }
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .card-container {
+        margin: 15px;
+        max-width: 280px;
+    }
+    
+    .card-content h1 {
+        font-size: 1.7rem;
+    }
+    
+    .card-content h5 {
+        font-size: 2.2rem;
+    }
+    
+    .btn-action {
+        padding: 0.8em 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-container {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .card-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .card-content h5 {
+        font-size: 2rem;
+    }
+    
+    .btn-action {
+        padding: 0.7em 30px;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card-content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .card-content h5 {
+        font-size: 1.8rem;
+    }
+    
+    .card-content p {
+        font-size: 0.75rem;
+    }
+    
+    .btn-action {
+        padding: 0.6em 20px;
+        font-size: 0.8rem;
+    }
+}
